@@ -7,10 +7,9 @@ ExecStart=/home/pi/usbpicamera/usbpicamera.sh
 WorkingDirectory=/home/pi/usbpicamera
 StandardOutput=inherit
 StandardError=inherit
-Restart=no
-#Restart=on-failure
-#RestartSec=3
-#User=pi
+Restart=on-failure
+RestartSec=3
+User=pi
 
 [Install]
 WantedBy=multi-user.target
